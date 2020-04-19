@@ -1,7 +1,6 @@
 ---
-layout: archive
+title: "Machine Learning Projects"
 permalink: /machine-learning/
-title: "Machine Learning"
+layout: tags
 author_profile: true
-header:
-  overlay_image: /images/Pittsburgh.jpg
+---
