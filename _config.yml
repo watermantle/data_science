@@ -113,13 +113,13 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/watermantle"
+      url: "https://github.com/watermantle"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-       url: "linkedin.com/in/yu-bai-97b067159"
+      url: "linkedin.com/in/yu-bai-97b067159"
 # Site Footer
 footer:
   links:
