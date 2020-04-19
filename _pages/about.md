@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "Pittsburgh.jpg"
+  image: /images/Pittsburgh2.jpg
 ---
 
 CFA level 3 passed, towards a data scientist who masters financial data with
