@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /machine-learning/
+permalink: /MachineLearn/
 title: "Machine Learning"
 author_profile: true
 header:
