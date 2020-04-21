@@ -19,7 +19,7 @@ For simplicity, let's consider a binary classification problem with a decision f
 has two possible outputs 1 and -1, representing two classes respectively, where
 **z** is a linear combination with input **$$ x_i $$** and corresponding weights **$$ w_i $$**. Hence,
 **$$ Z = w_1x_1 + w_2x_2 + ... + w_mx_m $$**:
-**$$ W = \[[[W_1], [...], [W_m]]\], X = \[[[X_1], [...], [X_m]]\] $$**
+$$ mathbf{W = \[[W_1], [...], [W_m]]}, mathbf{X = \[[X_1], [...], [X_m]]} $$
 
 formula block:
 $$ p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c)) $$
