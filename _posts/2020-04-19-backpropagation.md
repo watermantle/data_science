@@ -5,6 +5,7 @@ tags: [backpropagation]
 header:
   image: "images/backpropagation/cover.png"
 excerpt: "Machine Learning, Backpropagation, Data Science"
+mathjax: "true"
 ---
 ## Preface
 
