@@ -21,5 +21,10 @@ $$ \mathbf{z} $$ is a linear combination with input $$ \mathbf{x_i} $$ and corre
 
 $$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} $$ or:
 
-$$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]} $$,
-$$ \mathbf{X = \left[\begin{matrix} X_1 \\ ... \\ X_m \end{matrix}\right]} $$
+$$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]},
+ \mathbf{X = \left[\begin{matrix} X_1 \\ ... \\ X_m \end{matrix}\right]} $$
+
+ if we add a **bias term** of **b** to $$ \mathbf{z} $$, or here for uniformity, we set $$x_0 = 0$$ and
+ $$w_0 = b$$, we modify our formula to:
+
+$$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = W^TX} $$ 
