@@ -18,9 +18,8 @@ Before we get into MLP, we obviously need to understand what is perceptron.
 For simplicity, let's consider a binary classification problem with a decision function $$ \mathbf{\phi(z)} $$ that
 has two possible outputs 1 and -1, representing two classes respectively, where
 $$ \mathbf{z} $$ is a linear combination with input $$ \mathbf{x_i} $$ and corresponding weights $$ \mathbf{w_i} $$. Hence,
-$$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} $$:
 
-$$ W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right] $$,
-$$ X = \left[\begin{matrix} X_1 \\ ... \\ X_m \end{matrix}\right] $$
+$$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} $$ or:
 
-test: $$ \phi $$
+$$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]} $$,
+$$ \mathbf{X = \left[\begin{matrix} X_1 \\ ... \\ X_m \end{matrix}\right]} $$
