@@ -30,10 +30,11 @@ $$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]},
 $$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = \sum_{i=0}^m w_ix_i = W^TX} $$
 and our decision function:
 $$\mathbf{\phi(z)} =
-\begin{cases}
+\begin{aligned}
 \begin{matrix} 1 if z >= 0 \\ -1 otherwise
-\end{cases}$$
+\end{matrix}
+\end{aligned}$$
 
 Next we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, $$\mathbf{x^(i)}:
+2. For each training example, $$\mathbf{x^(i)}$$:
