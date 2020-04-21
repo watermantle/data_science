@@ -29,7 +29,7 @@ $$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]},
 
 $$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = \sum_{i=0}^m w_ix_i = W^TX} $$
 and our decision function:
-$$\mathbf{\phi(z)} = \left\{
+$$\mathbf{\phi(z)} =
 \begin{cases}
 \begin{matrix} 1 if z >= 0 \\ -1 otherwise
 \end{cases}$$
