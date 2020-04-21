@@ -3,7 +3,7 @@ title: "Let's write a keras-style MLP with numpy"
 date: 2020-04-19
 tags: [backpropagation]
 header:
-  image: "images/backpropagation/cover.png"
+  overlay_image: "images/backpropagation/cover.png"
 excerpt: "Machine Learning, Backpropagation, Data Science"
 ---
 
