@@ -35,6 +35,8 @@ $$\mathbf{\phi(z)} =
 \end{matrix}
 \end{aligned}$$
 
+$ [[w_0], [w_1]] $
+
 Next we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
 2. For each training example, $$\mathbf{x^(i)}$$:
