@@ -15,9 +15,12 @@ article, we will apply backpropagation and write a keras like MLP (multilayer pe
 ### 1. What is perceptron, how it works?
 
 Before we get into MLP, we obviously need to understand what is perceptron.
-In essence,
+For simplicity, let's consider a binary classification problem with a decision function **$$ phi(z) $$**, where
+**z** is a linear combination with input **$$ x_i $$** and corresponding weights **$$ w_i $$**. Hence,
+**$$ Z = w_1x_1 + w_2x_2 + ... + w_mx_m $$**:
+**$$ bb"W" = [[W_1], [...], [W_m]], bb"X" = [[X_1], [...], [X_m]] $$**
 
 formula block:
-$$ \[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\] $$
+$$ p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c)) $$
 
 $$ sum_(i=1)^n i^3=((n(n+1))/2)^2 $$
