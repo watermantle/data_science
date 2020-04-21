@@ -17,6 +17,4 @@ Before we get into MLP, we obviously need to understand what is perceptron.
 In essence,
 
 formula block:
-```
 \[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\]
-```
