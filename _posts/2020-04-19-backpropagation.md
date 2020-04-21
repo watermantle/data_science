@@ -17,10 +17,10 @@ article, we will apply backpropagation and write a keras like MLP (multilayer pe
 Before we get into MLP, we obviously need to understand what is perceptron.
 For simplicity, let's consider a binary classification problem with a decision function $$ \mathbf{\phi(z)} $$ that
 has two possible outputs 1 and -1, representing two classes respectively, where
-$$ \mathbf{z} $$ is a linear combination with input $$ \\mathbf{x_i} $$ and corresponding weights $$ \mathbf{w_i} $$. Hence,
+$$ \mathbf{z} $$ is a linear combination with input $$ \mathbf{x_i} $$ and corresponding weights $$ \mathbf{w_i} $$. Hence,
 $$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} $$:
 
-$$ \mathbf{W = \begin(matrix) W_1 \\ ... \\ W_m \end(matrix)},
-X = \begin(matrix) X_1 \\ ... \\ X_m \end(matrix) $$
+$$ \mathbf{W = \begin(matrix) W_1 \\ ... \\ W_m \end(matrix)} $$,
+$X = \begin(matrix) X_1 \\ ... \\ X_m \end(matrix)$
 
 test: $$ \phi $$
