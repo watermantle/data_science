@@ -5,7 +5,7 @@ tags: [backpropagation]
 header:
   overlay_image: "images/backpropagation/cover.png"
 excerpt: "Machine Learning, Backpropagation, Data Science"
-mathjax: "true"
+mathjax: true
 ---
 ## Preface
 
@@ -13,6 +13,7 @@ mathjax: "true"
 article, we will apply backpropagation and write a keras like MLP (multilayer perceptron) with numpy.
 
 ### 1. What is MLP and how to train a MLP
+
 
 formula block:
 ```
