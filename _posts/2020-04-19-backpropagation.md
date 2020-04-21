@@ -19,3 +19,5 @@ In essence,
 
 formula block:
 \[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\]
+
+$$ sum_(i=1)^n i^3=((n(n+1))/2)^2 $$
