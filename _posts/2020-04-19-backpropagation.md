@@ -19,7 +19,7 @@ For simplicity, let's consider a binary classification problem with a decision f
 has two possible outputs 1 and -1, representing two classes respectively, where
 $$ \mathbf{z} $$ is a linear combination with input $$ \mathbf{x_i} $$ and corresponding weights $$ \mathbf{w_i} $$. Hence,
 
-$$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} = \sum_(i=1)^m w_ix_i $$ or:
+$$ \mathbf{Z = w_1x_1 + w_2x_2 + ... + w_mx_m} = \sum_{i=1}^m w_ix_i $$ or:
 
 $$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]},
  \mathbf{X = \left[\begin{matrix} X_1 \\ ... \\ X_m \end{matrix}\right]} $$
@@ -27,7 +27,7 @@ $$ \mathbf{W = \left[\begin{matrix} W_1 \\ ... \\ W_m \end{matrix}\right]},
  if we add a **bias term** of **b** to $$ \mathbf{z} $$, or here for uniformity, we set $$x_0 = 1$$ and
  $$w_0 = b$$, we modify our formula to:
 
-$$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = \sum_(i=0)^m w_ix_i = W^TX} $$
+$$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = \sum_{i=0}^m w_ix_i = W^TX} $$
 and our decision function:
 $$\mathbf{\phi(z)} = \left{\begin{matrix} 1 if z >= 0 \\ -1 otherwise$$
 
