@@ -3,7 +3,7 @@ title: "Let's write a keras-style MLP with numpy (1)"
 date: 2020-04-19
 tags: [backpropagation]
 header:
-  image: "images/backpropagation/cover.png"
+  image: "images/backpropagation/cover.png =500x300"
 excerpt: "Machine Learning, Backpropagation, Data Science"
 mathjax: "true"
 ---
@@ -38,4 +38,7 @@ Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
 2. For each training example, **$x^(i)$**:
     1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
-    2. Update the weights
+    2. Update the weights [^1]
+
+[^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP
+ and perceptron share the same method, we will explain it later.
