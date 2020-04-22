@@ -42,9 +42,9 @@ Next, we will do following steps to train a perceptron:
 
 The process could be explained as follows:
 
-![perceptron pic][perceptron]
+![perceptron pic](/data_science/images/backpropagation/perceptron.png =600x370)
 
-[perceptron]: /data_science/images/backpropagation/perceptron.png =600x370
+
 
 [^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP
  and perceptron share the same method, we will explain it later.
