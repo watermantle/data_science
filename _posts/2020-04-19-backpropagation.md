@@ -42,7 +42,7 @@ Next, we will do following steps to train a perceptron:
 
 The process could be explained as follows:
 
-![perceptron pic](/data_science/images/backpropagation/perceptron.png =600x370)
+![perceptron pic](/data_science/images/backpropagation/perceptron.png) <!-- .element height="50%" width="50%" -->
 
 
 
