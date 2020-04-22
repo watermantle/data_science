@@ -15,23 +15,27 @@ article, we will apply backpropagation and write a keras like MLP (multilayer pe
 #### 1. What is perceptron, how it works?
 
 Before we get into MLP, we obviously need to understand what is perceptron.
-For simplicity, let's consider a binary classification problem with a decision function $$ \phi(z)} $$ that
-has two possible outputs 1 and -1, representing two classes respectively, where
-$$ bb"z" $$ is a linear combination with input $$ bb"x_i" $$ and corresponding weights $$ bb"w_i" $$. Hence,
+For simplicity, let's consider a binary classification problem with a decision function $\phi(z)$ that
+has two possible outputs 1 and -1, representing class 1 and class 2 respectively, where
+$bb"z"$ is a linear combination with input $bb"x_i"$ and corresponding weights $bb"w_i"$. Hence,
 
 **$Z = w_1x_1 + w_2x_2 + ... + w_mx_m = sum_(i=1)^m w_ix_i$** or:
 
 **$W =  [[W_1], [...], [W_m]],
  X = [[X_1], [...], [X_m]]$**
 
- if we add a **bias term** of **b** to **$z$**, or here for uniformity, we set $x_0 = 1$ and
- $w_0 = b$, we modify our formula to:
+ if we add a **bias** term, **b** to **z**, or here for uniformity, we set $x_0 = 1$ and
+ $w_0 = b$, we hence modify our formula as:
 
 **$Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = sum_(i=0)^m w_ix_i = W^TX$**
+
 and our decision function:
-**$\phi(z) = {(1, if, z, >=, 0),  (-1, otherwise):}$**
+
+**$\phi(z) = {(1,ifz>=0,,,),(-1,otherwise,,,):}$**
 
 
-Next we will do following steps to train a perceptron:
+Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
 2. For each training example, **$x^(i)$**:
+    1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
+    2. Update the weights
