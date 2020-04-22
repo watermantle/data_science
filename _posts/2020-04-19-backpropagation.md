@@ -24,19 +24,14 @@ $$ bb"z" $$ is a linear combination with input $$ bb"x_i" $$ and corresponding w
 **$W =  [[W_1], [...], [W_m]],
  X = [[X_1], [...], [X_m]]$**
 
- if we add a **bias term** of **b** to $$ \mathbf{z} $$, or here for uniformity, we set $x_0 = 1$ and
+ if we add a **bias term** of **b** to **$z$**, or here for uniformity, we set $x_0 = 1$ and
  $w_0 = b$, we modify our formula to:
 
-$$ \mathbf{Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = \sum_{i=0}^m w_ix_i = W^TX} $$
+**$Z = w_0x_0 + w_1x_1 + w_2x_2 + ... + w_mx_m = sum_(i=0)^m w_ix_i = W^TX$**
 and our decision function:
-$$\mathbf{\phi(z)} =
-\begin{aligned}
-\begin{matrix} 1 if z >= 0 \\ -1 otherwise
-\end{matrix}
-\end{aligned}$$
+**$\phi(z) = {(1, if, z, >=, 0),  (-1, otherwise):}$**
 
-$ [[w_0], [w_1]] $
 
 Next we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, $$\mathbf{x^(i)}$$:
+2. For each training example, **$x^(i)$**:
