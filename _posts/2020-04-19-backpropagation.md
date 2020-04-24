@@ -37,13 +37,19 @@ and our decision function:
 Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
 2. For each training example, **$x^(i)$**:
-    1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
-    2. Update the weights [^1]
-
+    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
+    2.2. Update the weights base on a loss function [^1]
+    2.3. Repeat 2.2 for several times (epochs)
 
 The process could be explained as follows:
 
 ![perceptron pic](/data_science/images/backpropagation/perceptron.png)
+
+Notice that if we:
+1. Drop the decision function $\phi(z)$, and use **MSE** (Mean Squared Error) as loss function, the perceptron will become to a linear regression (ordinary least square, more specifically)
+2. Use Sigmoid function to replace $\phi(z)$ and use **Log loss** (or called binary cross-entropy), the perceptron will become to a logistic regression
+
+#### 2. What is a MLP? How to apply backpropagation to train a MLP
 
 
 
