@@ -35,10 +35,10 @@ and our decision function:
 
 Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, **$x^(i)$**:&nbsp;
-    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**&nbsp;
-    2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function [^1]&nbsp;
-    2.3. Repeat 2.2 for several times (epochs)
+2. For each training example, **$x^(i)$**:     
+    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**     
+    2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function [^1]     
+    2.3. Repeat 2.2 for several times (epochs)     
 
 The process could be explained as follows:
 
