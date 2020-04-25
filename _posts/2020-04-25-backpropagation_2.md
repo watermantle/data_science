@@ -1,6 +1,6 @@
 ---
 title: "Let's write a keras-style MLP with numpy (2)"
-date: 2020-04-15
+date: 2020-04-25
 tags: [backpropagation]
 header:
   overlay_image: "images/Pittsburgh.jpg"
@@ -159,7 +159,7 @@ $-((y)/(haty) - (1-y)/(1-haty))$ (2.2)
 2. We used ***SGD*** to train the model. Recall it from previous part, weights will be updated with a subset of the inputs. batch_size is used to control this size.
 
 
-###Try our model
+### Try our model
 
 In order to test if our model is working, we will use a MLP with hidden-layers of 4 to solve a binary classification problem from sklearn:    
 ![data](/data_science/images/backpropagation/data.png)   
