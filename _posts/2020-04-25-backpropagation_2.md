@@ -194,5 +194,5 @@ Visualization the result by drawing decision boundary. In comparison, we also pl
 
  Not a bad job.
 
- You can also review the code at
+ You can also review the code at   
  [jupyter notebook code](https://github.com/watermantle/data_science/tree/master/_posts_code/backpropagation)
