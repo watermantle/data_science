@@ -35,14 +35,9 @@ and our decision function:
 
 Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, **$x^(i)$**:
-
-    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
-
-    2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function [^1]
-
-[^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP and perceptron share the same method, we will explain it later.
-
+2. For each training example, **$x^(i)$**:&nbsp;
+    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**&nbsp;
+    2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function [^1]&nbsp;
     2.3. Repeat 2.2 for several times (epochs)
 
 The process could be explained as follows:
@@ -98,3 +93,5 @@ $(delC_0)/(delb^((L))) = (delZ^((L)))/(delb^((L))) (delA^((L)))/(delZ^((L))) (de
 Finally, we can use a loop to calculate $(delC_0)/(delW)$ for each layer (from the last layer go back to the first) and to update weights based on Gradient Descent algorithm. We call this process **Backpropagation**.
 
 We now understand the based idea of MLP and training method. The next chapter will get started to code these processes.
+
+[^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP and perceptron share the same method, we will explain it later.
