@@ -75,15 +75,21 @@ Basically, there are two variants for the Gradient Descent. If we update weights
 Since $lambda$ (learning rate) is a hyperparameter that we manually set before the learning process, the only problem we have to handle is to find $(delC_0)/(delW)$.
 
 According to the chain rule:    
+
 $(delC_0)/(delW^((L))) = (delZ^((L)))/(delW^((L))) (delA^((L)))/(delZ^((L))) (delC_0)/(delA^((L))) = A^((L-1))phi_z^'(delC_0)/(delA^((L)))$  $(1.1)$    
+
 , where $A^((L))$ meaning the result of activation function at layer $L$, and so on.
 
 for the last term, $(delC_0)/(delA^((L)))$, because we can easily get the outcome of the output layer, we also need to know the $C_0$ derivative relative to  $A^((L-1))$.
 
 Hence:
+
 $(delC_0)/(delA^((L-1))) = (delZ^((L)))/(delA^((L-1)))(delA^((L)))/(delZ^((L)))(delC_0)/(delA^((L))) = W^((L))phi_z^'(delC_0)/(delA^((L)))$ $(1.2)$    
+
 Similarly, with respect to **bias** term, $b$ (notice, for computational convenience, we split $b$ from $W$):    
+
 $(delC_0)/(delb^((L))) = (delZ^((L)))/(delb^((L))) (delA^((L)))/(delZ^((L))) (delC_0)/(delA^((L))) = 1phi_z^'(delC_0)/(delA^((L)))$ $(1.3)$    
+
 Finally, we can use a loop to calculate $(delC_0)/(delW)$ for each layer (from the last layer go back to the first) and to update weights based on Gradient Descent algorithm. We call this process **Backpropagation**.
 
 We now understand the based idea of MLP and training method. The next chapter will get started to code these processes.
