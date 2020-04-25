@@ -45,8 +45,8 @@ class Layer(object):
         self.W = None
         self.b = None
 ```
-Module *Model* contains the architecture of the model as well as the training processes:
-````python
+Module ***Model*** contains the architecture of the model as well as the training processes:
+```python
 class Model(object):
     def __init__(self, lr, epochs, batch_size=200, seed=123):
         self.arch = []
@@ -152,16 +152,16 @@ class Model(object):
 ```
 
 Couple of comments on the code:
-1. Since the model is designed for a binary classification model. We have used *Log loss* or called *Cross-Entropy* loss. Its expression is:   
+1. Since the model is designed for a binary classification model. We have used ***Log loss*** or called ***Cross-Entropy*** loss. Its expression is:   
 $-(ylog(haty)+(1-y)log(1-haty))$ (2.1)       
-where $haty$ is the output of our model. In essence, the equation (2.1) is the loss function we use to calculate costs in the function *_compute_cost*. We also compute $(delC_0)/(delA^((L)))$ or dA_init in the code. This value is calculated from the derivatives of our loss function (equation 2.1):     
+where $haty$ is the output of our model. In essence, the equation (2.1) is the loss function we use to calculate costs in the function ***_compute_cost***. We also compute $(delC_0)/(delA^((L)))$ or dA_init in the code. This value is calculated from the derivatives of our loss function (equation 2.1):     
 $-((y)/(haty) - (1-y)/(1-haty))$ (2.2)     
-2. We used *SGD* to train the model. Recall it from previous part, weights will be updated with a subset of the inputs. batch_size is used to control this size.
+2. We used ***SGD*** to train the model. Recall it from previous part, weights will be updated with a subset of the inputs. batch_size is used to control this size.
 
 
 ###Try our model
 
-In order to test if our model is working, we will use a MLP with hidden-layers of 4 to solve a binary classification problem from sklearn:
+In order to test if our model is working, we will use a MLP with hidden-layers of 4 to solve a binary classification problem from sklearn:    
 ![data](/data_science/images/backpropagation/data.png)   
 ```python
 from sklearn.datasets import make_moons
