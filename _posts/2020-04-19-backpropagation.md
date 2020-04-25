@@ -73,6 +73,6 @@ The process 2.1 is self-explained and called **forward propagation**. We next ne
 
 For a loss function(or cost function) ***C_0***, if we update weights **W** based on a rule that **$W := W - lambda (delC_0)/(delW)$**, where $lambda$ is called **learning rate**, we see the weights will be updated with a very small step every time until $(delC_0)/(delW) = 0$, which is the time we find the minimal value of the cost function relative to weights. This straightforward yet powerful algorithm is called **Gradient Descent**.
 
-Basically, there are two variants for the Gradient Descent. If we update weights with all input samples, we call this algorithm **Batch Gradient Descent** or **BGD**. On the other hand, we can also randomly pick a subset of the input samples to update weights, this progress would result in a decline in the accuracy of each "step" (since it's not the real $(delC_0)/(delW)$, but a subset of it), but this move will speed up our training processes dramatically.
+Basically, there are two variants for the Gradient Descent. If we update weights with all input samples, we call this algorithm **Batch Gradient Descent** or **BGD**. On the other hand, we can also randomly pick a subset of the input samples to update weights, this progress would result in a decline in the accuracy of each "step" (since it's not the real $(delC_0)/(delW)$, but a subset of it), but this move will speed up our training processes dramatically. This variant is called **Stochastic Gradient Descent** or **BGD**.
 
-We now understand the based idea of MLP and training method. The next chapter will get started to code these processes. 
+We now understand the based idea of MLP and training method. The next chapter will get started to code these processes.
