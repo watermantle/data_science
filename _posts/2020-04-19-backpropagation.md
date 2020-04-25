@@ -58,7 +58,7 @@ we call the first and the last layer input and output layers respectively. The m
 A three layers MLP would be as follows:
  ![MLP pic](/data_science/images/backpropagation/MLP.png)
 
-where **a is simply equal to $\phi(z)$** for convenience. Notice that the outputs of the previous layer are obviously the inputs of the next layer.
+where **$a_i^n$** is simply equal to **$\phi(z)$** for convenience. Notice that the outputs of the previous layer are obviously the inputs of the next layer.
 Also, Activation Functions are not necessarily the binary function showed above. Some common activation functions are, for example, **Tanh, ReLU, Sigmoid, ELU, and SELU**. Showed as the plot:
 ![Activation functions](/data_science/images/backpropagation/activations.png)
 
