@@ -35,11 +35,14 @@ and our decision function:
 
 Next, we will do following steps to train a perceptron:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, **$x^(i)$**:\n
-    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**\n
+2. For each training example, **$x^(i)$**:
+
+    2.1. Compute the output values **$hat y$**, the one from decision function **$\phi(z)$**
+
     2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function [^1]
 
-[^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP and perceptron share the same method, we will explain it later.\n
+[^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP and perceptron share the same method, we will explain it later.
+
     2.3. Repeat 2.2 for several times (epochs)
 
 The process could be explained as follows:
@@ -62,12 +65,15 @@ where **$a_i^n$** is simply equal to **$\phi(z)$** for convenience. Notice that 
 Also, Activation Functions are not necessarily the binary function showed above. Some common activation functions are, for example, **Tanh, ReLU, Sigmoid, ELU, and SELU**. Showed as the plot:
 ![Activation functions](/data_science/images/backpropagation/activations.png)
 
-Similar to training a perceptron, we need to:\n
+Similar to training a perceptron, we need to:
 1. Initialize the weighs to small random numbers, we here can use stand normal distribution to do so.
-2. For each training example, **$x^(i)$**:\n
-    2.1. Go through each layer (multiplied by its weights and applied to its activation function), until we come up with the final output **$hat y$**.\n
+2. For each training example, **$x^(i)$**:
+
+    2.1. Go through each layer (multiplied by its weights and applied to its activation function), until we come up with the final output **$hat y$**.
+
     2.2. Update the weights by comparing to **$y$** and **$hat y$** to minimize the loss function\
-    2.3. Repeat 2.1 and 2.2 for several times (epochs)\n
+    2.3. Repeat 2.1 and 2.2 for several times (epochs)
+
 The process 2.1 is self-explained and called **forward propagation**. We next need to take a deep look at 2.2.
 
 For a loss function(or cost function) ***$C_0$***, if we update weights **$W$** based on a rule that **$W := W - lambda (delC_0)/(delW)$**, where $lambda$ is called **learning rate**, we see the weights will be updated with a very small step every time until $(delC_0)/(delW) = 0$, which is the time we find the minimal value of the cost function relative to weights. This straightforward yet powerful algorithm is called **Gradient Descent**.
