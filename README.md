@@ -1,3 +1,3 @@
 # This is my data science portfolio
-## The contents will be updated soon
+## Welcome to my site
 ### Major procjects should be Machine Learning Algorthms
