@@ -6,5 +6,5 @@ header:
 ---
 
 CFA level 3 passed, towards a data scientist who masters financial data with
-machine learning and other statistic models. Programming languages: Python, R,
-SQL
+machine learning and other statistic models. Programming languages: Python, C++,
+R, and SQL
