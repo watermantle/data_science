@@ -92,6 +92,6 @@ $(delC_0)/(delb^((L))) = (delZ^((L)))/(delb^((L))) (delA^((L)))/(delZ^((L))) (de
 
 Finally, we can use a loop to calculate $(delC_0)/(delW)$ for each layer (from the last layer go back to the first) and to update weights based on Gradient Descent algorithm. We call this process **Backpropagation**.
 
-We now understand the based idea of MLP and training method. The next part will get started to code these processes.
+We now understand the basic idea of MLP and training method. The next part will get started to code these processes.
 
 [^1]: We here will apply an approach called "Gradient Decent" to update weights. Since MLP and perceptron share the same method, we will explain it later.
